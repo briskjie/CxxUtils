@@ -12,7 +12,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun goOverScroller(view: View) {
-        val intent = Intent(this, BouncedRecyclerViewActivity::class.java)
+        val intent = Intent(this, OverRecyclerViewActivity::class.java)
         startActivity(intent)
     }
 }
