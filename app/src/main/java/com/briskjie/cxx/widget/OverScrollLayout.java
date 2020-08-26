@@ -79,8 +79,8 @@ public class OverScrollLayout extends LinearLayout {
                 return super.dispatchTouchEvent(ev);
             case MotionEvent.ACTION_MOVE:
                 int scrollXpos = (int) (ev.getX() - startXpos);
-                boolean pullDown = scrollXpos > 0 && canPullDown();
-                boolean pullUp = scrollXpos < 0 && canPullUp();
+                boolean pullDown = scrollXpos > 0 && canPullLeft();
+                boolean pullUp = scrollXpos < 0 && canPullRight();
                 if (pullDown || pullUp) {
                     cancelChild(ev);
                     int offset = (int) (scrollXpos * DAMPING_COEFFICIENT);
@@ -135,7 +135,7 @@ public class OverScrollLayout extends LinearLayout {
      *
      * @return true：可以，false:不可以
      */
-    private boolean canPullDown() {
+    private boolean canPullLeft() {
         final int firstVisiblePosition
                 = ((LinearLayoutManager) childView.getLayoutManager()).findFirstVisibleItemPosition();
         if (firstVisiblePosition != 0 && childView.getAdapter().getItemCount() != 0) {
@@ -150,7 +150,7 @@ public class OverScrollLayout extends LinearLayout {
      *
      * @return true：可以，false:不可以
      */
-    private boolean canPullUp() {
+    private boolean canPullRight() {
         final int lastItemPosition = childView.getAdapter().getItemCount() - 1;
         final int lastVisiblePosition
                 = ((LinearLayoutManager) childView.getLayoutManager()).findLastVisibleItemPosition();
