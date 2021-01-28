@@ -9,12 +9,12 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 
 import com.briskjie.cxx.adapter.HAdapter;
 import com.briskjie.cxx.adapter.VAdapter;
-import com.briskjie.cxx.widget.HRecyclerView;
-import com.briskjie.cxx.widget.VRecyclerView;
+import com.briskjie.cxx.widget.HorizontalRecyclerView;
+import com.briskjie.cxx.widget.VerticalRecyclerView;
 
 public class GestureTestActivity extends AppCompatActivity {
-    private VRecyclerView mVRecycler;
-    private HRecyclerView mHRecycler;
+    private VerticalRecyclerView mVRecycler;
+    private HorizontalRecyclerView mHRecycler;
     private LinearLayoutManager mVLinearLayoutManager;
     private LinearLayoutManager mHLinearLayoutManager;
 

@@ -12,7 +12,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <com.briskjie.cxx.widget.VRecyclerView
+            <com.briskjie.cxx.widget.VerticalRecyclerView
                 android:id="@+id/v_recycler"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
@@ -22,7 +22,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <com.briskjie.cxx.widget.HRecyclerView
+            <com.briskjie.cxx.widget.HorizontalRecyclerView
                 android:id="@+id/h_recycler"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

@@ -4,26 +4,24 @@ import android.content.Context;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.view.MotionEvent;
+import android.widget.RelativeLayout;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.recyclerview.widget.RecyclerView;
 
-public class VRecyclerView extends RecyclerView {
-    public String TAG = "cxx-竖滑动Recycler";
-
-    public VRecyclerView(@NonNull Context context) {
+public class MyParentView extends RelativeLayout {
+    public String TAG = "cxx-顶层view";
+    public MyParentView(@NonNull Context context) {
         super(context);
     }
 
-    public VRecyclerView(@NonNull Context context, @Nullable AttributeSet attrs) {
+    public MyParentView(@NonNull Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);
     }
 
-    public VRecyclerView(@NonNull Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
+    public MyParentView(@NonNull Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
     }
-
 
     @Override
     public boolean dispatchTouchEvent(MotionEvent event) {

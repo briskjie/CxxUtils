@@ -9,18 +9,18 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.recyclerview.widget.RecyclerView;
 
-public class HRecyclerView extends RecyclerView {
-    public String TAG = "cxx-横滑recycler";
+public class VerticalRecyclerView extends RecyclerView {
+    public String TAG = "cxx-竖滑动Recycler";
 
-    public HRecyclerView(@NonNull Context context) {
+    public VerticalRecyclerView(@NonNull Context context) {
         super(context);
     }
 
-    public HRecyclerView(@NonNull Context context, @Nullable AttributeSet attrs) {
+    public VerticalRecyclerView(@NonNull Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);
     }
 
-    public HRecyclerView(@NonNull Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
+    public VerticalRecyclerView(@NonNull Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
     }
 
