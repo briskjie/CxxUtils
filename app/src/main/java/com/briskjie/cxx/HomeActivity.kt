@@ -20,4 +20,9 @@ class HomeActivity : AppCompatActivity() {
         val intent = Intent(this, OverScrollRecyclerViewActivity::class.java)
         startActivity(intent)
     }
+
+    fun goGestureTextActivity(view: View) {
+        val intent = Intent(this, GestureTestActivity::class.java);
+        startActivity(intent)
+    }
 }
