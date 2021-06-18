@@ -23,8 +23,9 @@ import java.io.IOException;
 import java.math.BigInteger;
 import java.nio.ByteBuffer;
 
-import static com.briskjie.cxx.gzip.TarConstants.CHKSUMLEN;
-import static com.briskjie.cxx.gzip.TarConstants.CHKSUM_OFFSET;
+import static com.briskjie.gzip.utils.gzip.TarConstants.CHKSUMLEN;
+import static com.briskjie.gzip.utils.gzip.TarConstants.CHKSUM_OFFSET;
+
 
 /**
  * This class provides static utility methods to work with byte streams.
