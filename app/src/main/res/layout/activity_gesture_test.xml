@@ -4,6 +4,7 @@
     android:layout_height="match_parent">
 
 
+
     <com.briskjie.cxx.widget.ParentLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -31,4 +32,15 @@
         </com.briskjie.cxx.widget.HorizontalLayout>
 
     </com.briskjie.cxx.widget.ParentLayout>
+
+    <TextView
+        android:background="@color/red"
+        android:id="@+id/goCtext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="B"
+        android:textColor="@color/black"
+        android:onClick="goToCActivity"
+        android:textSize="20sp" />
 </RelativeLayout>

@@ -40,6 +40,22 @@ public class MyParentView extends RelativeLayout {
     }
 
     @Override
+    public boolean onInterceptTouchEvent(MotionEvent ev) {
+        switch (ev.getAction()) {
+            case MotionEvent.ACTION_DOWN:
+                Log.d(TAG, "onInterceptTouchEvent: action down:");
+                break;
+            case MotionEvent.ACTION_MOVE:
+                Log.d(TAG, "onInterceptTouchEvent: action move:");
+                break;
+            case MotionEvent.ACTION_UP:
+                Log.d(TAG, "onInterceptTouchEvent: action up:");
+                break;
+        }
+        return true;
+    }
+
+    @Override
     public boolean onTouchEvent(MotionEvent event) {
         boolean intercept = super.onTouchEvent(event);
         switch (event.getAction()) {
